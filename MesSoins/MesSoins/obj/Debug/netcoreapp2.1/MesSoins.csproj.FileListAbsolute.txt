@@ -1,0 +1,8 @@
+C:\Users\dylan.esculier\Documents\MesSoins\MesSoins\MesSoins\MesSoins\bin\Debug\netcoreapp2.1\MesSoins.deps.json
+C:\Users\dylan.esculier\Documents\MesSoins\MesSoins\MesSoins\MesSoins\bin\Debug\netcoreapp2.1\MesSoins.runtimeconfig.json
+C:\Users\dylan.esculier\Documents\MesSoins\MesSoins\MesSoins\MesSoins\bin\Debug\netcoreapp2.1\MesSoins.runtimeconfig.dev.json
+C:\Users\dylan.esculier\Documents\MesSoins\MesSoins\MesSoins\MesSoins\bin\Debug\netcoreapp2.1\MesSoins.dll
+C:\Users\dylan.esculier\Documents\MesSoins\MesSoins\MesSoins\MesSoins\obj\Debug\netcoreapp2.1\MesSoins.csprojAssemblyReference.cache
+C:\Users\dylan.esculier\Documents\MesSoins\MesSoins\MesSoins\MesSoins\obj\Debug\netcoreapp2.1\MesSoins.csproj.CoreCompileInputs.cache
+C:\Users\dylan.esculier\Documents\MesSoins\MesSoins\MesSoins\MesSoins\obj\Debug\netcoreapp2.1\MesSoins.AssemblyInfoInputs.cache
+C:\Users\dylan.esculier\Documents\MesSoins\MesSoins\MesSoins\MesSoins\obj\Debug\netcoreapp2.1\MesSoins.AssemblyInfo.cs
