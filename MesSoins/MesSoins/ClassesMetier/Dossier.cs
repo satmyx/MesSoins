@@ -1,4 +1,4 @@
-﻿// <copyright file="Class1.cs" company="PlaceholderCompany">
+﻿// <copyright file="Dossier.cs" company="PlaceholderCompany">
 // Copyright (c) PlaceholderCompany. All rights reserved.
 // </copyright>
 
@@ -45,14 +45,5 @@ namespace MesSoins.ClassesMetier
         /// Gets (Property) permet de récupérer la date de naissance d'un patient.
         /// </summary>
         public string DateNaissance { get => this.dateNaissance; }
-
-        /// <summary>
-        /// Permet d'ajouter une prestation a un dossier.
-        /// </summary>
-        public void AjoutePrestation()
-        {
-
-        }
-
     }
 }
