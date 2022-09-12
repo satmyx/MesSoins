@@ -46,5 +46,13 @@ namespace MesSoins.ClassesMetier
         /// </summary>
         public string DateNaissance { get => this.dateNaissance; }
 
+        /// <summary>
+        /// Permet d'ajouter une prestation a un dossier.
+        /// </summary>
+        public void AjoutePrestation()
+        {
+
+        }
+
     }
 }
