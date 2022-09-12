@@ -24,7 +24,7 @@ namespace MesSoins.ClassesMetier
         /// <param name="adresse">Paramètre contenant l'adresse de l'intervenant.</param>
         /// <param name="tel">Paramètre contenant le numéro de l'intervenant.</param>
         public IntervenantExterne(string specialite, string adresse, string tel)
-            : base()
+            : base("", "")
         {
             this.specialite = specialite;
             this.adresse = adresse;

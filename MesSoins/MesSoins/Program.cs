@@ -17,7 +17,11 @@ namespace MesSoins
         /// <param name="args">args.</param>
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ClassesMetier.Dossier d = new ClassesMetier.Dossier("Robert", "Jean", "03/12/1980");
+            d.AjoutePrestation(new ClassesMetier.Prestation("P3", DateTime.Now));
+            Console.WriteLine(d);
+
+            Console.ReadKey();
         }
     }
 }

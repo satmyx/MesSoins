@@ -17,6 +17,8 @@ namespace MesSoins.ClassesMetier
         private string nom;
         private string prenom;
         private string dateNaissance;
+        private List<Prestation> prestation;
+
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Dossier"/> class.
@@ -29,6 +31,7 @@ namespace MesSoins.ClassesMetier
             this.nom = nom;
             this.prenom = prenom;
             this.dateNaissance = dateNaissance;
+            this.prestation = new List<Prestation>();
         }
 
         /// <summary>
@@ -45,5 +48,36 @@ namespace MesSoins.ClassesMetier
         /// Gets (Property) permet de récupérer la date de naissance d'un patient.
         /// </summary>
         public string DateNaissance { get => this.dateNaissance; }
+
+        /// <summary>
+        /// Gets or Sets permet de récupérer les préstations ainsi que de les modifiers.
+        /// </summary>
+        public List<Prestation> Prestations { get => this.prestation; set => this.prestation = value; }
+
+        /// <summary>
+        /// Méthode qui permet d'ajouter une préstation au Dossier.
+        /// </summary>
+        /// <param name="prestation">Paramètre pour la prestation.</param>
+        public void AjoutePrestation(Prestation prestation)
+        {
+            this.prestation.Add(prestation);
+        }
+
+        /// <summary>
+        /// Méthode ToString permettant de print sur la console.
+        /// </summary>
+        /// <returns>Toutes les valeurs présent dans le dossier.</returns>
+        public override string ToString()
+        {
+            string ListPresta = "";
+
+            foreach (Prestation p in this.Prestations)
+            {
+                ListPresta += p.Libelle + " " + p.DateHeureSoin;
+            }
+
+            return "--- Début du dossier ---" + "\nNom : " + this.Nom + "\nPrénom : " + this.Prenom + "\nDate de naissance : " + this.DateNaissance + "\n--- Prestation ---" + "\n" + ListPresta;
+        }
+
     }
 }

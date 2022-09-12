@@ -14,14 +14,14 @@ namespace MesSoins.ClassesMetier
     class Prestation
     {
         private string libelle;
-        private string dateHeureSoin;
+        private DateTime dateHeureSoin;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Prestation"/> class.
         /// </summary>
         /// <param name="libelle">Paramètre ayant en valeur le libellé de la prestation.</param>
         /// <param name="dateHeureSoin">Paramètre ayant en valeur la date et heure de soin de la prestation.</param>
-        public Prestation(string libelle, string dateHeureSoin)
+        public Prestation(string libelle, DateTime dateHeureSoin)
         {
             this.libelle = libelle;
             this.dateHeureSoin = dateHeureSoin;
@@ -35,7 +35,7 @@ namespace MesSoins.ClassesMetier
         /// <summary>
         /// Gets (Property) permet de récupérer la date et heure de soin d'une prestation.
         /// </summary>
-        public string DateHeureSoin { get => this.dateHeureSoin; }
+        public DateTime DateHeureSoin { get => this.dateHeureSoin; }
 
         /// <summary>
         /// Méthode ToString permettant de renvoyer les informations.

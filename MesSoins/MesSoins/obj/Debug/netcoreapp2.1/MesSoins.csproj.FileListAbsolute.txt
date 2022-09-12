@@ -6,3 +6,6 @@ C:\Users\dylan.esculier\Documents\MesSoins\MesSoins\MesSoins\MesSoins\obj\Debug\
 C:\Users\dylan.esculier\Documents\MesSoins\MesSoins\MesSoins\MesSoins\obj\Debug\netcoreapp2.1\MesSoins.csproj.CoreCompileInputs.cache
 C:\Users\dylan.esculier\Documents\MesSoins\MesSoins\MesSoins\MesSoins\obj\Debug\netcoreapp2.1\MesSoins.AssemblyInfoInputs.cache
 C:\Users\dylan.esculier\Documents\MesSoins\MesSoins\MesSoins\MesSoins\obj\Debug\netcoreapp2.1\MesSoins.AssemblyInfo.cs
+C:\Users\dylan.esculier\Documents\MesSoins\MesSoins\MesSoins\MesSoins\bin\Debug\netcoreapp2.1\MesSoins.pdb
+C:\Users\dylan.esculier\Documents\MesSoins\MesSoins\MesSoins\MesSoins\obj\Debug\netcoreapp2.1\MesSoins.dll
+C:\Users\dylan.esculier\Documents\MesSoins\MesSoins\MesSoins\MesSoins\obj\Debug\netcoreapp2.1\MesSoins.pdb
