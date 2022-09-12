@@ -73,7 +73,7 @@ namespace MesSoins.ClassesMetier
 
             foreach (Prestation p in this.Prestations)
             {
-                ListPresta += p.Libelle + " " + p.DateHeureSoin;
+                ListPresta += "\n" + p.Libelle + " " + p.DateHeureSoin;
             }
 
             return "--- Début du dossier ---" + "\nNom : " + this.Nom + "\nPrénom : " + this.Prenom + "\nDate de naissance : " + this.DateNaissance + "\n--- Prestation ---" + "\n" + ListPresta;

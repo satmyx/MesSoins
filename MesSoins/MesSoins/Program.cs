@@ -19,6 +19,8 @@ namespace MesSoins
         {
             ClassesMetier.Dossier d = new ClassesMetier.Dossier("Robert", "Jean", "03/12/1980");
             d.AjoutePrestation(new ClassesMetier.Prestation("P3", DateTime.Now));
+            d.AjoutePrestation(new ClassesMetier.Prestation("P4", DateTime.Now));
+            d.AjoutePrestation(new ClassesMetier.Prestation("P5", DateTime.Now));
             Console.WriteLine(d);
 
             Console.ReadKey();
