@@ -9,3 +9,16 @@ C:\Users\dylan.esculier\Documents\MesSoins\MesSoins\MesSoins\MesSoins\obj\Debug\
 C:\Users\dylan.esculier\Documents\MesSoins\MesSoins\MesSoins\MesSoins\bin\Debug\netcoreapp2.1\MesSoins.pdb
 C:\Users\dylan.esculier\Documents\MesSoins\MesSoins\MesSoins\MesSoins\obj\Debug\netcoreapp2.1\MesSoins.dll
 C:\Users\dylan.esculier\Documents\MesSoins\MesSoins\MesSoins\MesSoins\obj\Debug\netcoreapp2.1\MesSoins.pdb
+C:\Users\PC\Desktop\Soins\MesSoins\MesSoins\obj\Debug\netcoreapp2.1\MesSoins.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\Soins\MesSoins\MesSoins\obj\Debug\netcoreapp2.1\MesSoins.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\Soins\MesSoins\MesSoins\obj\Debug\netcoreapp2.1\MesSoins.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\Soins\MesSoins\MesSoins\obj\Debug\netcoreapp2.1\MesSoins.AssemblyInfo.cs
+C:\Users\PC\Desktop\Soins\MesSoins\MesSoins\obj\Debug\netcoreapp2.1\MesSoins.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Soins\MesSoins\MesSoins\obj\Debug\netcoreapp2.1\MesSoins.dll
+C:\Users\PC\Desktop\Soins\MesSoins\MesSoins\obj\Debug\netcoreapp2.1\MesSoins.pdb
+C:\Users\PC\Desktop\Soins\MesSoins\MesSoins\bin\Debug\netcoreapp2.1\MesSoins.deps.json
+C:\Users\PC\Desktop\Soins\MesSoins\MesSoins\bin\Debug\netcoreapp2.1\MesSoins.runtimeconfig.json
+C:\Users\PC\Desktop\Soins\MesSoins\MesSoins\bin\Debug\netcoreapp2.1\MesSoins.runtimeconfig.dev.json
+C:\Users\PC\Desktop\Soins\MesSoins\MesSoins\bin\Debug\netcoreapp2.1\MesSoins.dll
+C:\Users\PC\Desktop\Soins\MesSoins\MesSoins\bin\Debug\netcoreapp2.1\MesSoins.pdb
+C:\Users\PC\Desktop\Soins\MesSoins\MesSoins\obj\Debug\netcoreapp2.1\MesSoins.genruntimeconfig.cache

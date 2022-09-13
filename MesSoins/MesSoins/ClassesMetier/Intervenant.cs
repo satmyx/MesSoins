@@ -15,6 +15,7 @@ namespace MesSoins.ClassesMetier
     {
         private string nom;
         private string prenom;
+        private List<Prestation> prestations = new List<Prestation>();
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Intervenant"/> class.
@@ -36,5 +37,23 @@ namespace MesSoins.ClassesMetier
         /// Gets permet de récupérer le prénom d'un intervenant.
         /// </summary>
         public string Prenom { get => this.prenom; }
+
+        /// <summary>
+        /// Ajouter une Prestation.
+        /// </summary>
+        /// <param name="prestation">Paramètres de la prestation.</param>
+        public void AjoutePrestation(Prestation prestation)
+        {
+            this.prestations.Add(prestation);
+        }
+
+        /// <summary>
+        /// Méthode ToString.
+        /// </summary>
+        /// <returns>Retourne le nom et prénom de l'intervenant.</returns>
+        public override string ToString()
+        {
+            return "Intervenant : " + this.Nom + " - " + this.Prenom;
+        }
     }
 }
