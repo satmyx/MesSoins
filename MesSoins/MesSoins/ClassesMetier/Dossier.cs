@@ -139,16 +139,10 @@ namespace MesSoins.ClassesMetier
         /// <summary>
         /// Deuxième méthode qui permet d'avoir les jours de soins.
         /// </summary>
-        public void GetNbJoursSoinsV2()
+        /// <returns>Retourne le nombre de prestations.</returns>
+        public int GetNbJoursSoinsV2()
         {
-            List<DateTime> dates = new List<DateTime>();
-
-            foreach (Prestation presta in this.Prestations)
-            {
-                dates.Add(presta.DateHeureSoin.Date);
-            }
-
-            Console.WriteLine(dates.Distinct().Count());
+            return this.Prestations.Select(x => x.DateHeureSoin.Date).Distinct().Count();
         }
 
         /// <summary>

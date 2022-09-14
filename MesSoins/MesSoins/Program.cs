@@ -44,7 +44,7 @@ namespace MesSoins
                 dossier.GetNbJoursSoinsV1();
                 dossier.GetNbPrestationsExternes();
                 dossier.GetNbPrestations();
-                dossier.GetNbJoursSoinsV2();
+                Console.WriteLine(dossier.GetNbJoursSoinsV2());
             }
             catch (Exception ex)
             {
