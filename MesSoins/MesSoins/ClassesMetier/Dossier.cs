@@ -6,6 +6,7 @@ namespace MesSoins.ClassesMetier
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
     using System.Text;
 
     /// <summary>
@@ -133,6 +134,21 @@ namespace MesSoins.ClassesMetier
             }
 
             Console.WriteLine("Nombre de jours de soins V1 : " + dates.Count);
+        }
+
+        /// <summary>
+        /// Deuxième méthode qui permet d'avoir les jours de soins.
+        /// </summary>
+        public void GetNbJoursSoinsV2()
+        {
+            List<DateTime> dates = new List<DateTime>();
+
+            foreach (Prestation presta in this.Prestations)
+            {
+                dates.Add(presta.DateHeureSoin.Date);
+            }
+
+            Console.WriteLine(dates.Distinct().Count());
         }
 
         /// <summary>

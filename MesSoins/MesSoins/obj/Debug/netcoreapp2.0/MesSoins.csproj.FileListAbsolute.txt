@@ -1,0 +1,11 @@
+C:\Users\dylan.esculier\Documents\MesSoins\MesSoins\MesSoins\MesSoins\bin\Debug\netcoreapp2.0\MesSoins.deps.json
+C:\Users\dylan.esculier\Documents\MesSoins\MesSoins\MesSoins\MesSoins\bin\Debug\netcoreapp2.0\MesSoins.runtimeconfig.json
+C:\Users\dylan.esculier\Documents\MesSoins\MesSoins\MesSoins\MesSoins\bin\Debug\netcoreapp2.0\MesSoins.runtimeconfig.dev.json
+C:\Users\dylan.esculier\Documents\MesSoins\MesSoins\MesSoins\MesSoins\bin\Debug\netcoreapp2.0\MesSoins.dll
+C:\Users\dylan.esculier\Documents\MesSoins\MesSoins\MesSoins\MesSoins\bin\Debug\netcoreapp2.0\MesSoins.pdb
+C:\Users\dylan.esculier\Documents\MesSoins\MesSoins\MesSoins\MesSoins\obj\Debug\netcoreapp2.0\MesSoins.csprojAssemblyReference.cache
+C:\Users\dylan.esculier\Documents\MesSoins\MesSoins\MesSoins\MesSoins\obj\Debug\netcoreapp2.0\MesSoins.csproj.CoreCompileInputs.cache
+C:\Users\dylan.esculier\Documents\MesSoins\MesSoins\MesSoins\MesSoins\obj\Debug\netcoreapp2.0\MesSoins.AssemblyInfoInputs.cache
+C:\Users\dylan.esculier\Documents\MesSoins\MesSoins\MesSoins\MesSoins\obj\Debug\netcoreapp2.0\MesSoins.AssemblyInfo.cs
+C:\Users\dylan.esculier\Documents\MesSoins\MesSoins\MesSoins\MesSoins\obj\Debug\netcoreapp2.0\MesSoins.dll
+C:\Users\dylan.esculier\Documents\MesSoins\MesSoins\MesSoins\MesSoins\obj\Debug\netcoreapp2.0\MesSoins.pdb
