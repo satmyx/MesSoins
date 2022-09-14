@@ -6,6 +6,7 @@ namespace MesSoins.ClassesMetier
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
     using System.Text;
 
     /// <summary>
@@ -45,6 +46,15 @@ namespace MesSoins.ClassesMetier
         public void AjoutePrestation(Prestation prestation)
         {
             this.prestations.Add(prestation);
+        }
+
+        /// <summary>
+        /// La méthode GetNbPrestations permet de récupérer le nombre de préstations par intervenants.
+        /// </summary>
+        /// <returns>Retourne le nombre de préestations.(int)</returns>
+        public int GetNbPrestations()
+        {
+            return this.prestations.Count();
         }
 
         /// <summary>

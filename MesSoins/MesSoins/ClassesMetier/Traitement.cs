@@ -1,21 +1,22 @@
-﻿// <copyright file="Program.cs" company="PlaceholderCompany">
+﻿// <copyright file="Traitement.cs" company="PlaceholderCompany">
 // Copyright (c) PlaceholderCompany. All rights reserved.
 // </copyright>
 
-namespace MesSoins
+namespace MesSoins.ClassesMetier
 {
     using System;
-    using MesSoins.ClassesMetier;
+    using System.Collections.Generic;
+    using System.Text;
 
     /// <summary>
-    /// Class Program regroupant la méthode main.
+    /// Class Traitement qui contiendra les méthodes de tests.
     /// </summary>
-    class Program
+    static class Traitement
     {
         /// <summary>
-        /// Méthode qui réalise la même situation que le tp.
+        /// Méthode qui affichera le dossier exemple.
         /// </summary>
-        public static void TestDateDossierPrestation()
+        internal static void TesteDossier()
         {
             try
             {
@@ -53,19 +54,28 @@ namespace MesSoins
         }
 
         /// <summary>
-        /// Méthode Main.
+        /// Permet de faire un test sur le nombre de préstations des intervenants.
         /// </summary>
-        /// <param name="args">args.</param>
-        private static void Main(string[] args)
+        /// <returns>Retourne le nombre de préstations de l'intervenant sujet au test.</returns>
+        internal static int TesteGetNbPrestations()
         {
-            TestDateDossierPrestation();
-            Console.WriteLine("[ ////////////////////////////////////////////////////////////////////// ]");
-            ClassesMetier.Traitement.TesteDossier();
-            Console.WriteLine("[ ////////////////////////////////////////////////////////////////////// ]");
-            Console.WriteLine("Nombres de préstations pour ce sujet de test (intervenant) : " + ClassesMetier.Traitement.TesteGetNbPrestations());
-            Console.WriteLine("[ ////////////////////////////////////////////////////////////////////// ]");
-            Console.WriteLine("Nombre de préstations pour ce sujet de test (intervenant externe) : " + ClassesMetier.Traitement.TesteGetNbPrestationsIE());
-            Console.ReadKey();
+            Intervenant intervenant = new Intervenant("Dupont", "Pierre");
+            intervenant.AjoutePrestation(new Prestation("P10", Convert.ToDateTime("12/06/2019 06:00:00"), intervenant));
+            intervenant.AjoutePrestation(new Prestation("P11", Convert.ToDateTime("15/06/2019 06:00:00"), intervenant));
+            return intervenant.GetNbPrestations();
+        }
+
+        /// <summary>
+        /// Permet de faire un test sur le nombre de préstations des intervenants externes.
+        /// </summary>
+        /// <returns>Retourne le nombre de préstations de l'intervenant externe sujet au test.</returns>
+        internal static int TesteGetNbPrestationsIE()
+        {
+            IntervenantExterne intervenantexterne = new IntervenantExterne("Terrature", "Julie", "Cardiologue", "Toulon", "0000112233");
+            intervenantexterne.AjoutePrestation(new Prestation("P20", Convert.ToDateTime("12/06/2019 06:00:00"), intervenantexterne));
+            intervenantexterne.AjoutePrestation(new Prestation("P21", Convert.ToDateTime("14/06/2019 06:00:00"), intervenantexterne));
+            intervenantexterne.AjoutePrestation(new Prestation("P22", Convert.ToDateTime("18/07/2019 06:00:00"), intervenantexterne));
+            return intervenantexterne.GetNbPrestations();
         }
     }
 }
