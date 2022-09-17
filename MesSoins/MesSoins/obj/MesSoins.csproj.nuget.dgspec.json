@@ -1,36 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dylan.esculier\\Documents\\MesSoins\\MesSoins\\MesSoins\\MesSoins\\MesSoins.csproj": {}
+    "D:\\MesSoins\\MesSoins\\MesSoins\\MesSoins.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dylan.esculier\\Documents\\MesSoins\\MesSoins\\MesSoins\\MesSoins\\MesSoins.csproj": {
+    "D:\\MesSoins\\MesSoins\\MesSoins\\MesSoins.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dylan.esculier\\Documents\\MesSoins\\MesSoins\\MesSoins\\MesSoins\\MesSoins.csproj",
+        "projectUniqueName": "D:\\MesSoins\\MesSoins\\MesSoins\\MesSoins.csproj",
         "projectName": "MesSoins",
-        "projectPath": "C:\\Users\\dylan.esculier\\Documents\\MesSoins\\MesSoins\\MesSoins\\MesSoins\\MesSoins.csproj",
-        "packagesPath": "C:\\Users\\dylan.esculier\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dylan.esculier\\Documents\\MesSoins\\MesSoins\\MesSoins\\MesSoins\\obj\\",
+        "projectPath": "D:\\MesSoins\\MesSoins\\MesSoins\\MesSoins.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "D:\\MesSoins\\MesSoins\\MesSoins\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\dylan.esculier\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.0"
+          "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.0": {
+          "net5.0": {
+            "targetAlias": "netcoreapp5.0",
             "projectReferences": {}
           }
         },
@@ -41,13 +41,9 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.0": {
+        "net5.0": {
+          "targetAlias": "netcoreapp5.0",
           "dependencies": {
-            "Microsoft.NETCore.App": {
-              "target": "Package",
-              "version": "[2.0.0, )",
-              "autoReferenced": true
-            },
             "StyleCop.Analyzers": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -56,10 +52,21 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }
