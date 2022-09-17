@@ -7,6 +7,7 @@ namespace MesSoins.ClassesMetier
     using System;
     using System.Collections.Generic;
     using System.Text;
+    using MesSoins.Exceptions;
 
     /// <summary>
     /// Class Prestation permettant de faire des actions sur la prestation.
@@ -26,7 +27,17 @@ namespace MesSoins.ClassesMetier
         public Prestation(string libelle, DateTime dateHeureSoin, Intervenant intervenant)
         {
             this.libelle = libelle;
-            this.dateHeureSoin = dateHeureSoin;
+
+            // Check si la date est inférieur a celle actuel.
+            if (DateTime.Compare(DateTime.Now.Date, dateHeureSoin.Date) >= 0)
+            {
+                this.dateHeureSoin = dateHeureSoin;
+            }
+            else
+            {
+                throw new Soins2021Exception("La date de création de la préstation ne peut être postèrieur à la date du jour");
+            }
+
             this.intervenant = intervenant;
         }
 

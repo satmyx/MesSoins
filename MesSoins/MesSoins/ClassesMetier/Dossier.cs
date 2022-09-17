@@ -32,7 +32,17 @@ namespace MesSoins.ClassesMetier
         {
             this.nom = nom;
             this.prenom = prenom;
-            this.dateNaissance = dateNaissance;
+
+            // Check si la date de naissance est supérieur au moment actuel.
+            if (DateTime.Compare(DateTime.Now.Date, dateNaissance) >= 0)
+            {
+                this.dateNaissance = dateNaissance;
+            }
+            else
+            {
+                throw new Soins2021Exception("La date de création du dossier ne peut être postèrieur à la date du jour");
+            }
+
             this.prestation = new List<Prestation>();
             this.dateCreation = DateTime.Now;
         }
@@ -85,9 +95,8 @@ namespace MesSoins.ClassesMetier
             }
             else
             {
-                throw new Soins2021Exception("Date non conforme");
+                throw new Soins2021Exception("La date de création du dossier ne peut être postèrieur à la date du jour");
             }
-
         }
 
         /// <summary>
@@ -121,7 +130,15 @@ namespace MesSoins.ClassesMetier
         /// <param name="prestation">Paramètre pour la prestation.</param>
         public void AjoutePrestation(Prestation prestation)
         {
-            this.prestation.Add(prestation);
+            // Check si la date est postérieur ou égale au dossier.
+            if (DateTime.Compare(prestation.DateHeureSoin.Date, this.DateCreation.Date) >= 0)
+            {
+                this.prestation.Add(prestation);
+            }
+            else
+            {
+                throw new Soins2021Exception("La date de création du dossier ne peut être postèrieur à la date du jour");
+            }
         }
 
         /// <summary>

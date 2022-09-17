@@ -7,6 +7,7 @@ namespace MesSoins.ClassesMetier
     using System;
     using System.Collections.Generic;
     using System.Text;
+    using MesSoins.Exceptions;
 
     /// <summary>
     /// Class Traitement qui contiendra les méthodes de tests.
@@ -47,7 +48,7 @@ namespace MesSoins.ClassesMetier
                 dossier.GetNbPrestations();
                 Console.WriteLine("Nombre de jours soins V3 : " + dossier.GetNbJoursSoinsV2());
             }
-            catch (Exception ex)
+            catch (Soins2021Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
