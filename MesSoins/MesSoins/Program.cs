@@ -58,6 +58,8 @@ namespace MesSoins
         /// <param name="args">args.</param>
         private static void Main(string[] args)
         {
+            try
+            {
             TestDateDossierPrestation();
             Console.WriteLine("[ ////////////////////////////////////////////////////////////////////// ]");
             ClassesMetier.Traitement.TesteDossier();
@@ -65,6 +67,11 @@ namespace MesSoins
             Console.WriteLine("Nombres de préstations pour ce sujet de test (intervenant) : " + ClassesMetier.Traitement.TesteGetNbPrestations());
             Console.WriteLine("[ ////////////////////////////////////////////////////////////////////// ]");
             Console.WriteLine("Nombre de préstations pour ce sujet de test (intervenant externe) : " + ClassesMetier.Traitement.TesteGetNbPrestationsIE());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             Console.ReadKey();
         }
     }
