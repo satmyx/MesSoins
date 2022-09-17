@@ -8,6 +8,7 @@ namespace MesSoins.ClassesMetier
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
+    using MesSoins.Exceptions;
 
     /// <summary>
     ///  La classe Dossier permet de conserver les données propres à un dossier ouvert pour un patient, et d'y associer les différentes prestations réalisées en précisant pour chacune la
@@ -19,6 +20,7 @@ namespace MesSoins.ClassesMetier
         private string prenom;
         private DateTime dateNaissance;
         private List<Prestation> prestation;
+        private DateTime dateCreation;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Dossier"/> class.
@@ -32,6 +34,7 @@ namespace MesSoins.ClassesMetier
             this.prenom = prenom;
             this.dateNaissance = dateNaissance;
             this.prestation = new List<Prestation>();
+            this.dateCreation = DateTime.Now;
         }
 
         /// <summary>
@@ -66,6 +69,28 @@ namespace MesSoins.ClassesMetier
         }
 
         /// <summary>
+        /// Initializes a new instance of the <see cref="Dossier"/> class.
+        /// Constructeur surchargé de dossier avec date de creation.
+        /// </summary>
+        /// <param name="nom">Nom du patient.</param>
+        /// <param name="prenom">Prénom du patient.</param>
+        /// <param name="dateNaissance">Date de naissance du patient.</param>
+        /// <param name="dateCreation">Date de creation du dossier.</param>
+        public Dossier(string nom, string prenom, DateTime dateNaissance, DateTime dateCreation)
+            : this(nom, prenom, dateNaissance)
+        {
+            if (DateTime.Compare(DateTime.Now.Date, dateCreation) >= 0)
+            {
+                this.dateCreation = dateCreation;
+            }
+            else
+            {
+                throw new Soins2021Exception("Date non conforme");
+            }
+
+        }
+
+        /// <summary>
         /// Gets (Property) permet de récupérer le nom d'un patient.
         /// </summary>
         public string Nom { get => this.nom; }
@@ -84,6 +109,11 @@ namespace MesSoins.ClassesMetier
         /// Gets or Sets permet de récupérer les préstations ainsi que de les modifiers.
         /// </summary>
         public List<Prestation> Prestations { get => this.prestation; set => this.prestation = value; }
+
+        /// <summary>
+        /// Gets permet de récupérer la date de création du projet.
+        /// </summary>
+        public DateTime DateCreation { get => this.dateCreation; }
 
         /// <summary>
         /// Méthode qui permet d'ajouter une préstation au Dossier.

@@ -10,7 +10,19 @@ namespace MesSoins.Exceptions
     using System.Text;
     using System.Threading.Tasks;
 
-    class Soins2021Exception
+    /// <summary>
+    /// Class comportant les Exceptions du programme.
+    /// </summary>
+    class Soins2021Exception : Exception
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Soins2021Exception"/> class.
+        /// Constructeur des Exceptions.
+        /// </summary>
+        /// <param name="message">Message que renvoie l'exception.</param>
+        public Soins2021Exception(string message)
+            : base(message)
+        {
+        }
     }
 }
