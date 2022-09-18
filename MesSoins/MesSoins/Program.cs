@@ -71,6 +71,14 @@ namespace MesSoins
                 Console.WriteLine("Création de dossier inférieur à la date du jour ? : " + ClassesMetier.Traitement.TestDateDossierCreationOK());
                 Console.WriteLine("[ ////////////////////////////////////////////////////////////////////// ]");
                 Console.WriteLine("Création de dossier postérieur à la date du jour ? : " + ClassesMetier.Traitement.TestDateDossierCreationKO());
+                Console.WriteLine("[ ////////////////////////////////////////////////////////////////////// ]");
+                Console.WriteLine("Création de prestation inférieur à la date du jour ? : " + ClassesMetier.Traitement.TestDatePrestationInferieurJourOK());
+                Console.WriteLine("[ ////////////////////////////////////////////////////////////////////// ]");
+                Console.WriteLine("Création de prestation postérieur à la date du jour ? : " + ClassesMetier.Traitement.TestDatePrestationInferieurJourKO());
+                Console.WriteLine("[ ////////////////////////////////////////////////////////////////////// ]");
+                Console.WriteLine("Création de prestation postérieur à la date du jour ? : " + ClassesMetier.Traitement.TestDatePrestationSuperieurCreationDossierOK());
+                Console.WriteLine("[ ////////////////////////////////////////////////////////////////////// ]");
+                Console.WriteLine("Création de prestation postérieur à la date du jour ? : " + ClassesMetier.Traitement.TestDatePrestationSuperieurCreationDossierKO());
             }
             catch (Exception ex)
             {

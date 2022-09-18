@@ -118,5 +118,77 @@ namespace MesSoins.ClassesMetier
                 return true;
             }
         }
+
+        /// <summary>
+        /// Cette méthode doit retourner vrai car la date de création de la préstation est inférieur a celle actu.
+        /// </summary>
+        /// <returns>Vraie ou faux.</returns>
+        internal static bool TestDatePrestationInferieurJourOK()
+        {
+            try
+            {
+                IntervenantExterne intervenantexterne = new IntervenantExterne("Terrature", "Julie", "Cardiologue", "Toulon", "0000112233");
+                Prestation p = new Prestation("P20", Convert.ToDateTime("12/06/2019 06:00:00"), intervenantexterne);
+                return true;
+            }
+            catch (Soins2021Exception ex)
+            {
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Cette méthode doit retourner vrai car la date de création de la préstation est supérieur a celle actu.
+        /// </summary>
+        /// <returns>Vraie ou faux.</returns>
+        internal static bool TestDatePrestationInferieurJourKO()
+        {
+            try
+            {
+                IntervenantExterne intervenantexterne = new IntervenantExterne("Terrature", "Julie", "Cardiologue", "Toulon", "0000112233");
+                Prestation p = new Prestation("P20", Convert.ToDateTime("10/09/2080 06:00:00"), intervenantexterne);
+                return false;
+            }
+            catch (Soins2021Exception ex)
+            {
+                return true;
+            }
+        }
+
+        /// <summary>
+        /// Cette méthode doit retourner vrai car la date de création de prestation est supérieur à la date du jour
+        /// elle a donc déclenché une exception de type Soins2021Exception
+        /// Si elle retourne faux, c'est qu'il y a un bug dans le code de la méthode.
+        /// </summary>
+        /// <returns>Vraie ou faux.</returns>
+        internal static bool TestDatePrestationSuperieurCreationDossierOK()
+        {
+            try
+            {
+                Dossier d = new Dossier("Dupont", "Jean", Convert.ToDateTime("10/09/1989 12:00:00"), Convert.ToDateTime("10/09/2015 12:00:00"));
+                IntervenantExterne intervenantexterne = new IntervenantExterne("Terrature", "Julie", "Cardiologue", "Toulon", "0000112233");
+                intervenantexterne.AjoutePrestation(new Prestation("P20", Convert.ToDateTime("12/06/2019 06:00:00"), intervenantexterne));
+                return true;
+            }
+            catch (Soins2021Exception ex)
+            {
+                return false;
+            }
+        }
+
+        internal static bool TestDatePrestationSuperieurCreationDossierKO()
+        {
+            try
+            {
+                Dossier d = new Dossier("Dupont", "Jean", Convert.ToDateTime("10/09/1989 12:00:00"), Convert.ToDateTime("10/09/2080 12:00:00"));
+                IntervenantExterne intervenantexterne = new IntervenantExterne("Terrature", "Julie", "Cardiologue", "Toulon", "0000112233");
+                intervenantexterne.AjoutePrestation(new Prestation("P20", Convert.ToDateTime("12/06/2080 06:00:00"), intervenantexterne));
+                return false;
+            }
+            catch (Soins2021Exception ex)
+            {
+                return true;
+            }
+        }
     }
 }
