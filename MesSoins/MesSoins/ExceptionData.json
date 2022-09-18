@@ -1,0 +1,26 @@
+[
+  {
+    "Application": "Soins2021",
+    "ClasseException": "Soins2021Exception",
+    "DateException": "18/09/2022 14:42:18",
+    "MessageException": "La date de création du dossier ne peut être postèrieur à la date du jour",
+    "UserException": "PC",
+    "UserMachine": "DESKTOP-8943LET"
+  },
+  {
+    "Application": "Soins2021",
+    "ClasseException": "Soins2021Exception",
+    "DateException": "18/09/2022 14:42:18",
+    "MessageException": "La date de création du dossier ne peut être postèrieur à la date du jour",
+    "UserException": "PC",
+    "UserMachine": "DESKTOP-8943LET"
+  },
+  {
+    "Application": "Soins2021",
+    "ClasseException": "Soins2021Exception",
+    "DateException": "18/09/2022 14:42:18",
+    "MessageException": "La date de création du dossier ne peut être postèrieur à la date du jour",
+    "UserException": "PC",
+    "UserMachine": "DESKTOP-8943LET"
+  }
+]

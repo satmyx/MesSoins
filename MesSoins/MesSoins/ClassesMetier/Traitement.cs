@@ -78,5 +78,45 @@ namespace MesSoins.ClassesMetier
             intervenantexterne.AjoutePrestation(new Prestation("P22", Convert.ToDateTime("18/07/2019 06:00:00"), intervenantexterne));
             return intervenantexterne.GetNbPrestations();
         }
+
+        /// <summary>
+        /// Cette méthode doit retourner vrai car la date de création du dossier est inférieure à la date du jour.
+        /// Si elle retourne faux, c'est qu'il y a un bug dans le code de la méthode.
+        /// </summary>
+        /// <returns>Vraie ou faux.</returns>
+        internal static bool TestDateDossierCreationOK()
+        {
+            try
+            {
+                Dossier d = new Dossier("Dupont", "Jean", Convert.ToDateTime("10/09/1989 12:00:00"), Convert.ToDateTime("10/09/2015 12:00:00"));
+
+                return true;
+            }
+            catch (Soins2021Exception ex)
+            {
+
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Cette méthode doit retourner vrai car la date de création du dossier est postérieure à la date du jour
+        /// elle a donc déclenché une exception de type Soins2021Exception
+        /// Si elle retourne faux, c'est qu'il y a un bug dans le code de la méthode.
+        /// </summary>
+        /// <returns>Vraie ou faux.</returns>
+        internal static bool TestDateDossierCreationKO()
+        {
+            try
+            {
+                Dossier d = new Dossier("Dupont", "Jean", Convert.ToDateTime("10/09/1989 12:00:00"), Convert.ToDateTime("10/09/2080 12:00:00"));
+
+                return false;
+            }
+            catch (Soins2021Exception ex)
+            {
+                return true;
+            }
+        }
     }
 }

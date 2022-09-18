@@ -30,3 +30,6 @@ D:\MesSoins\MesSoins\MesSoins\obj\Debug\netcoreapp5.0\MesSoins.dll
 D:\MesSoins\MesSoins\MesSoins\obj\Debug\netcoreapp5.0\ref\MesSoins.dll
 D:\MesSoins\MesSoins\MesSoins\obj\Debug\netcoreapp5.0\MesSoins.pdb
 D:\MesSoins\MesSoins\MesSoins\obj\Debug\netcoreapp5.0\MesSoins.genruntimeconfig.cache
+D:\MesSoins\MesSoins\MesSoins\bin\Debug\netcoreapp5.0\MesSoins.dll.config
+D:\MesSoins\MesSoins\MesSoins\bin\Debug\netcoreapp5.0\Newtonsoft.Json.dll
+D:\MesSoins\MesSoins\MesSoins\obj\Debug\netcoreapp5.0\MesSoins.csproj.CopyComplete

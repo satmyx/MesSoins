@@ -60,18 +60,23 @@ namespace MesSoins
         {
             try
             {
-            TestDateDossierPrestation();
-            Console.WriteLine("[ ////////////////////////////////////////////////////////////////////// ]");
-            ClassesMetier.Traitement.TesteDossier();
-            Console.WriteLine("[ ////////////////////////////////////////////////////////////////////// ]");
-            Console.WriteLine("Nombres de préstations pour ce sujet de test (intervenant) : " + ClassesMetier.Traitement.TesteGetNbPrestations());
-            Console.WriteLine("[ ////////////////////////////////////////////////////////////////////// ]");
-            Console.WriteLine("Nombre de préstations pour ce sujet de test (intervenant externe) : " + ClassesMetier.Traitement.TesteGetNbPrestationsIE());
+                TestDateDossierPrestation();
+                Console.WriteLine("[ ////////////////////////////////////////////////////////////////////// ]");
+                ClassesMetier.Traitement.TesteDossier();
+                Console.WriteLine("[ ////////////////////////////////////////////////////////////////////// ]");
+                Console.WriteLine("Nombres de préstations pour ce sujet de test (intervenant) : " + ClassesMetier.Traitement.TesteGetNbPrestations());
+                Console.WriteLine("[ ////////////////////////////////////////////////////////////////////// ]");
+                Console.WriteLine("Nombre de préstations pour ce sujet de test (intervenant externe) : " + ClassesMetier.Traitement.TesteGetNbPrestationsIE());
+                Console.WriteLine("[ ////////////////////////////////////////////////////////////////////// ]");
+                Console.WriteLine("Création de dossier inférieur à la date du jour ? : " + ClassesMetier.Traitement.TestDateDossierCreationOK());
+                Console.WriteLine("[ ////////////////////////////////////////////////////////////////////// ]");
+                Console.WriteLine("Création de dossier postérieur à la date du jour ? : " + ClassesMetier.Traitement.TestDateDossierCreationKO());
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
+
             Console.ReadKey();
         }
     }
